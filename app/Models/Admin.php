@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Admin extends Model
 {
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'user';
+    protected $table = 'admin';
 
     /**
      * The primary key associated with the table.
@@ -33,9 +33,7 @@ class User extends Model
      * @var array
      */
     protected $fillable = [
-        'nama', 'email', 'alamat', 'image',
-        'password',
-        'role_id', 'is_active', 'tanggal_input'
+        'nama', 'password'
     ];
 
     /**
